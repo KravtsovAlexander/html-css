@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="icon" href="favicon.png" type="image">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Вернуться на главную</a>
+        </nav>
+        <h2>Регистрация</h2>
+    </header>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Основная информация (все поля обязательны)</legend>
+            <div>
+                <input id="login" type="text" name="login" placeholder="Придумайте имя пользователя*"
+                 minlength="3" maxlength="16" pattern="^[a-zA-Z0-9]+$" required>
+            </div>
+            <div>
+                <input id="password" type="password" name="password" placeholder="Придумайте пароль*"
+                 minlength="6" maxlength="16" pattern="^[a-zA-Z0-9]+$" required>
+            </div>
+            <div>
+                <input id="re_password" type="password" name="re_password"
+                 placeholder="Повторите пароль*" minlength="6" maxlength="16" pattern="^[a-zA-Z0-9]+$"
+                 required>
+            </div>
+            <div>
+                <input id="email" type="email" name="email" placeholder="Введите свой e-mail"
+                 required>
+            </div>
+            <p>*допустимо использовать только буквы английского алфавита и цифры</p>
+        </fieldset>
+    </form> 
+</body>
+</html>

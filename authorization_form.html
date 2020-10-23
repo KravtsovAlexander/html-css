@@ -6,12 +6,18 @@
     <link rel="icon" href="favicon.png" type="image">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Вернуться на главную</a>
+        </nav>
+        <h2>Авторизация</h2>
+    </header>
     <form action="#" method="POST">
         <div>
             <label>
                 Имя пользователя или e-mail:
                 <input id="login" type="text" name="login" placeholder="Введите имя пользователя/e-mail"
-                minlength="6" maxlength="30" autofocus>
+                minlength="6" maxlength="30" autofocus required>
             </label>
         </div>
         <div>
@@ -24,7 +30,7 @@
         <div>
             <label>
                 Запомнить:
-                <input id="to_remember" type="checkbox" name="to_remember" checked>
+                <input id="to_remember" type="checkbox" name="to_remember" checked required>
             </label>
         </div>
         <div>
