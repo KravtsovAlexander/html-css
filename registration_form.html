@@ -12,7 +12,7 @@
         </nav>
         <h2>Регистрация</h2>
     </header>
-    <form action="#" method="POST">
+    <form action="#" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Основная информация (все поля обязательны)</legend>
             <div>
@@ -34,6 +34,41 @@
             </div>
             <p>*допустимо использовать только буквы английского алфавита и цифры</p>
         </fieldset>
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+            <div>
+                <label>
+                    Дата рождения:
+                    <input id="birthday" type="date" name="birthday">
+                </label>
+                
+            </div>
+            <div>
+                <label>
+                    Пол:
+                    <label>М<input type="radio" value="male" name="sex"</label>
+                    <label>Ж<input type="radio" value="female" name="sex"</label>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Город:
+                    <select id="city" name="city">
+                        <option value="spb" selected>Санкт-Петербург</option>
+                        <option value="another">Другой</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Фото:
+                    <input id="photo" type="file" accept="image/*">
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Отправить">
+        </div>
     </form> 
 </body>
 </html>
