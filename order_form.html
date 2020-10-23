@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="icon" href="favicon.png" type="image">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Вернуться на главную</a>
+        </nav>
+        <h2>Оформление заказа</h2>
+    </header>
+    <form id="order_form" action="#" method="POST" name="order_form">
+        <div id="contact_details">
+            <label>
+                Ф.И.О:
+                <input type="text" name="contact_details[]" placeholder="Фамилия" required>
+                <input type="text" name="contact_details[]" placeholder="Имя" required>
+                <input type="text" name="contact_details[]" placeholder="Отчество" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                Контактный телефон:
+                <input id="phone_number" type="text" name="contact_details[]"
+                 placeholder="Пример: +79522427555" minlength="12" maxlength="12" required>
+            </label>
+            <label>
+                E-mail:
+                <input id="email" type="email" name="contact_details[]" placeholder="E-mail"
+                required>
+            </label>
+        </div>
+        <div id="delivery">
+            <label><input type="radio" name="delivery" value="no" checked>Самовывоз</label>
+            <label><input type="radio" name="delivery" value="yes">Доставка</label>
+        </div>
+        <div>
+            <select id="city" name="city" disabled> <!-- должен включаться при выборе доставки-->
+                <option selected>Выберите город из списка</option>
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Другой</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Комплектация</legend>
+            <div>
+                <label>
+                    Бюст Аристотеля<input type="checkbox" name="product_id" value="(product_id)"
+                    checked disabled>
+                </label>
+            </div>
+            <div id="extra_stuff">
+                <div>
+                    <label>
+                        Декоративная подставка<input type="checkbox" name="extra_stuff[]" value="1">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Защитный чехол<input type="checkbox" name="extra_stuff[]" value="2">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Стеклянная витрина<input type="checkbox" name="extra_stuff[]" value="3">
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <div id="payment">
+            <h4>Способ оплаты</h4>
+            <div>
+                <label>Наличные<input type="radio" name="payment" value="cash" checked></label>
+                <label>Безналичная оплата<input type="radio" name="payment" value="cashless"></label>
+            </div>
+        </div>
+        <div>
+            <label>
+                Дополнительно:
+                <textarea id="message" placeholder="(заполнять не обязательно)"></textarea>
+            </label>
+        </div>
+        <div>
+            <label>
+                Согласие с <a href="#">условиями</a>:
+                <input id="agreement" type="checkbox" name="agreement" required>
+            </label>
+        </div>
+        <input id="submit" type="submit" name="submit" value="Рассчитать">
+    </form>
+    <footer>
+        <button type="submit" form="order_form">кнопка вне формы</button>
+    </footer>
+</body>
+</html>

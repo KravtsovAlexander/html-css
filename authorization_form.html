@@ -12,7 +12,7 @@
         </nav>
         <h2>Авторизация</h2>
     </header>
-    <form action="#" method="POST">
+    <form id="authorization_form" action="#" method="POST" name="authorization_form">
         <div>
             <label>
                 Имя пользователя или e-mail:
@@ -33,9 +33,7 @@
                 <input id="to_remember" type="checkbox" name="to_remember" checked required>
             </label>
         </div>
-        <div>
-            <input type="submit" value="Войти">
-        </div>
+        <input id="submit" type="submit" name="submit" value="Войти">
     </form> 
 </body>
 </html>
