@@ -1,1 +1,28 @@
 @import "styles.css";
+
+.category {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.catalog {
+    margin: 50px auto;
+    text-align: center;
+}
+article {
+    text-align: justify;
+}
+.category-photo {
+    border-radius: 15px;
+    border: 5px solid #6ff9ff;
+    width: 70%;
+}
+
+#catalog {
+    margin-top: 50px;
+    height: 50px;
+    background-color: #6ff9ff;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 5px 10px;
+}

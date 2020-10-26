@@ -32,7 +32,7 @@ footer {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255,255,255, 0.8);
     padding: 15px;
     border-radius: 15px;
 }
@@ -79,4 +79,7 @@ footer {
 
 .white-color {
     color: white;
+}
+.opacity {
+    opacity: 0.8;
 }
