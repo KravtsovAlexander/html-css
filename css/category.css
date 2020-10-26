@@ -1,0 +1,38 @@
+@import "styles.css";
+
+.product {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(0, 149, 168, 0.5); 
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.catalog {
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+}
+
+article {
+    text-align: justify;
+}
+
+table,
+th,
+td {
+    width: 100%;
+}
+
+.description {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.more {
+    font-size: 18px;
+    text-decoration: underline;
+}
