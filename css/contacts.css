@@ -1,0 +1,14 @@
+@import "styles.css";
+
+html,
+body {
+    height: 100%;
+}
+
+#contacts {
+    min-height: 100%;
+}
+
+footer {
+    margin-top: -60px;
+}
