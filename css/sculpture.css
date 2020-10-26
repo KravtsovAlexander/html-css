@@ -1,1 +1,46 @@
 @import "styles.css";
+
+.product-photo {
+    display: block;
+    width: 40%;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+article {
+    text-align: justify;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    padding: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+caption {
+    background-color: rgba(0, 149, 168, 0.5); 
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.common-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.order {
+    background-color: #EC407A;
+    border-radius: 15px;
+    font-size: 30px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
