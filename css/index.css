@@ -1,28 +1,51 @@
 @import "styles.css";
 
-.category {
+.category-relative {
     display: inline-block;
-    font-size: 20px;
+    position: relative;
+    margin: 0 30px;
 }
+
+.category-relative p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px #FFF176;
+    display: none;
+}
+
+.category-relative p a {
+   position: absolute;
+   background-color: #FFF176; 
+   border-radius: 15px;
+   right: 10%;
+   left: 10%;
+   bottom: 5%;
+   height: 120px;
+   font-size: 50px;
+   text-align: center;
+   padding: 5px;
+}
+
 
 .catalog {
     margin: 50px auto;
     text-align: center;
-}
+    }
 article {
     text-align: justify;
 }
-.category-photo {
-    border-radius: 15px;
-    border: 5px solid #6ff9ff;
-    width: 70%;
-}
 
-#catalog {
+#catalog-header {
     margin-top: 50px;
-    height: 50px;
     background-color: #6ff9ff;
     border-radius: 15px;
     font-size: 30px;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    color: #283593;
+    text-shadow: 0px 0px 1px black;
 }

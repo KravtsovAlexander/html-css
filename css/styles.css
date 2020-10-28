@@ -20,13 +20,15 @@ ul {
 body {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
+    color: #212121;
 }
 
 
 header,
 footer {
-    height: 60px;
-    background-color: #26c6da;;
+    min-height: 60px;
+    background-color: #26c6da;
+    color: #303F9F;
 }
 
 .container {
@@ -37,19 +39,23 @@ footer {
     border-radius: 15px;
 }
 
-.authorization {
-    display: inline;
-    position: absolute;
-    right: 10px;
-}
 
 nav {
     background-color: #0095a8;
     font-size: 20px;
+    position:  fixed; /*nav теперь заезжает на каталог при переходе по ссылке "каталог"*/
+    top: 0;
+    width: 100%;
+    z-index: 5;
 }
+
 header {
+    margin-top: 24px; /*компенсация fixed nav'a*/
     margin-bottom: 50px;
-    padding: 10px 0;
+}
+
+.authorization {
+    display: inline;
 }
 
 h1,
@@ -58,29 +64,23 @@ footer {
     padding: 0 10px 0;
 }
 
+
 footer {
     padding-top: 15px;
     margin-top: 50px;
 }
 
-.bg-cyan-main {
-    color: #26c6da;
+
+footer,
+header {
+    text-shadow: 1px 1px 1px black;
 }
 
-.bg-cyan-dark {
-    color: #0095a8;
+.img-border {
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px black;
 }
 
-.bg-cyan-light {
-    color: #6ff9ff;
-}
-.black-color {
-    color: black;
-}
-
-.white-color {
-    color: white;
-}
-.opacity {
-    opacity: 0.8;
+.box-shadow-1 {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
