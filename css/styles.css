@@ -48,7 +48,7 @@ nav {
     position:  fixed; /*nav теперь заезжает на каталог при переходе по ссылке "каталог"*/
     top: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 50;
 }
 
 header {
@@ -57,7 +57,58 @@ header {
 }
 
 .authorization {
-    display: inline;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: none;
+}
+
+.authorization::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -10;
+}
+
+.authorization:target {
+    display: block;
+}
+
+.authorization form {
+    position: relative;
+    background: #0095a8;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 150px);
+    padding: 10px;
+}
+
+.authorization input {
+    border-style: none;
+    outline-style: none;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    color: black;
+    font-size: 25px;
+    color:#9E9E9E;
+}
+
+.close-btn:hover {
+    color: white;
 }
 
 h1,

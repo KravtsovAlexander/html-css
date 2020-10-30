@@ -14,10 +14,8 @@
             <a href="index.html">Главная</a> 
             <a href="index.html#catalog-header">Каталог</a> 
             <a href="contacts.html">Контакты</a> 
-            <div class="authorization">
-                <a href="authorization_form.html">Авторизация</a>
-                <a href="registration_form.html">Регистрация</a>
-            </div>
+            <a href="#authorization_form">Авторизация</a>
+            <a href="registration_form.html">Регистрация</a>
         </nav>
         <h1>Купить реплики древних скульптур</h1>
     </header>
@@ -69,6 +67,26 @@
             </section>        
         </div>
     </main>
+    <div id="authorization_form" class="authorization">
+        <form action="#" method="POST" name="authorization_form">
+            <div>
+                <input id="login" type="text" name="login" placeholder="Имя пользователя/e-mail"
+                minlength="6" maxlength="30" autofocus required>
+            </div>
+            <div>
+                <input id="password" type="password" name="password" placeholder="Пароль"
+                minlength="8" maxlength="16">
+            </div>
+            <div>
+                <label>
+                    Запомнить:
+                    <input id="to_remember" type="checkbox" name="to_remember" checked required>
+                </label>
+            </div>
+            <input id="submit" type="submit" name="submit" value="Войти">
+            <a class="close-btn" href="#close">&#10006</a>
+        </form>
+    </div>
     <footer>
         <address>
             <ul>
