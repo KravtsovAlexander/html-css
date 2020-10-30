@@ -3,7 +3,7 @@
 .category-relative {
     display: inline-block;
     position: relative;
-    margin: 0 30px;
+    margin: 30px;
 }
 
 .category-relative p {
@@ -16,6 +16,10 @@
     border-radius: 15px;
     box-shadow: 0 0 5px 5px #FFF176;
     display: none;
+}
+
+.category-relative:hover p {
+    display: block;
 }
 
 .category-relative p a {
