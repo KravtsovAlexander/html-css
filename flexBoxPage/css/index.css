@@ -6,16 +6,6 @@ html {
     height: 100%;
 }
 
-.padding {
-    padding: 5px;
-}
-
-.item {
-    border: 1px solid black;
-    cursor: pointer;
-    
-}
-
 body {
     margin: 0;
     display: flex;
@@ -39,18 +29,18 @@ header,
 footer {
     line-height: 50px;
     background: gold;
+    text-align: center;
 }
 
 
 /* header links */
 nav {
     display: flex;
-    justify-content: space-between;
     text-align: center;
 }
 
 .nav-link {
-    flex-grow: 1;
+    flex: 1;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-top: 2px solid black;
@@ -71,7 +61,7 @@ nav {
 }
 
 .aside-link {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,39 +73,42 @@ nav {
 
 
 /*main*/
-main .flex-row {
-    flex-grow: 1;
+.item {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+    height: calc(100% - 20px); /* Чтобы рамка растягивалась по всей высоте col-* элемента, независимо
+                                от количества текста. (20px = margin * 2)*/
 }
 
-.big-image-cell,
-.title-image-cell,
-.text-image-cell,
-.text-cell,
-.divided-text-cell {
-    display: flex;
+main .flex-row {
+    flex: 1;
 }
 
 img {
     width: 100%;
+    height: auto;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.height-100 {
     height: 100%;
 }
 
-.title-image-cell .item {
-    font-weight: bold;
-    align-items: center;
-}
-
-p {
+p,
+h3 {
     padding: 5px;
 }
 
-.item {
-    text-align: justify;
-    align-self: stretch;
-    width: 100%;
-}
-
-.divided-text-cell {
-    justify-content: space-between;
+h3 {
+    text-align: center;
 }
 /*main*/
